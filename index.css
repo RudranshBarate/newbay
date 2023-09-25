@@ -1,0 +1,187 @@
+body {
+ background-image: url('backgroundnew.jpg');
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  /* -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%; */
+
+}
+
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, p {
+ margin: 0;
+ padding: 0;
+}
+
+/* Remove default margin from the body element */
+body {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Make sure to set body height to 100% */
+html, body {
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/* Container to hold buttons */
+.container {
+ text-align: center;
+}
+
+/* Responsive button styling */
+.responsive-button {
+ background-color:  black;
+ color: white;
+ /* padding: 15px; */
+ padding: 15px;
+ /* margin: 5px; */
+ margin: 5px;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ max-width: 200px; /* Maximum width */
+ font-size: 1.2em;
+ border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.responsive-button:hover {
+  background-color: #625D5D;
+  color: #fff;
+}
+/* Make the buttons grow on smaller screens */
+/* @media only screen and (max-width: 600px) {
+ .responsive-button {
+   font-size:  0.8em;
+   padding: 20px;
+ }
+} */
+
+/* ... (existing CSS code) */
+
+/* ... (existing CSS code) */
+
+/* Header */
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: absolute;
+ width: 100%;
+ top: 0;
+ /* padding: 10px; */
+ padding: 10px;
+ box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo {
+ max-width: 150px;
+ height: auto;
+}
+
+/* Main content */
+.main-content {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ /* padding-top: 50px;  */
+ padding-top: 50px;  /* Increase padding to avoid overlap */
+}
+
+/* Make the logos and header responsive */
+/* @media only screen and (max-width: 600px) {
+ .logo {
+   max-width: 100px;
+ }
+} */
+/* .logo.logo-right {
+  width: 150px;  /* Fixed width */
+  height: auto;  /* Maintain aspect ratio */
+} */
+
+/* Update styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+    /* height: auto; */
+    height: 100px;
+  }
+  .logo.logo-right {
+    width: 150px;  /* Fixed width at 150px even on smaller screens */
+    height: auto;  /* Maintain aspect ratio */
+  }
+  .responsive-button {
+    font-size: 1.5em;  /* Larger font size */
+    padding: 25px;  /* Larger padding */
+  }
+  .header {
+    padding: 10px;  /* Increase padding */
+  }
+  .main-content {
+    padding-top: 90px;  /* Increase padding to avoid overlap */
+  }
+}
+
+.main-content {
+  /* existing styles */
+  max-height: calc(100vh - 40px); /* Maximum height minus the height of the bottom-fixed element */
+  overflow-y: auto; /* Make it scrollable */
+}
+
+
+.bottomdiv {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* Center the element to the left */
+  transform: translateX(-50%); /* Center the element to the right */
+  margin: 0;
+  background-color: grey; /* Optional: make it slightly transparent */
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+
+}
+
+.bottom-text-1{
+  font-family: FreeMono;
+  margin: 5px;
+  font-size: 17px;
+}
+.bottom-text-2{
+  font-family: : FreeMono;
+  margin:5px;
+  font-size: 17px;
+}
+.bottom-text-3{
+  font-family: : FreeMono;
+  margin: 5px;
+  font-size: 17px;
+}
+.bottom-text-4{
+  font-family: : FreeMono;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 15px;
+
+}
+.bottom-text-5{
+  font-family: : FreeMono;
+  font-weight: bold;
+  margin-bottom:  10px;
+  font-size: 15px;
+}
+.bottom-text-6{
+  font-family: : FreeMono;
+
+  font-size: 12px;
+}
